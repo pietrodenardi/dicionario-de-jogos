@@ -1,5 +1,8 @@
 # dicionario-de-jogos
-um site que você pode colocar jogos que você já jogou  
+
+###**Autor:** Pietro Adamy Denardi
+
+um site em que você coloca seus jogos jogados junto com informações extras como tempo de jogo e além disso pode colocar jogos que você pretende jogar   
 
 #### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
 
