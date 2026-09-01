@@ -1,6 +1,6 @@
 # dicionario-de-jogos
 
-###**Autor:** Pietro Adamy Denardi
+### **Autor:** Pietro Adamy Denardi
 
 um site em que você coloca seus jogos jogados junto com informações extras como tempo de jogo e além disso pode colocar jogos que você pretende jogar   
 
