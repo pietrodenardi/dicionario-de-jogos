@@ -161,37 +161,29 @@ Esta é uma representação inicial da estrutura do banco de dados simulado que 
 
 ### Framework CSS
 
-* **Tecnologia:** Bootstrap
-* **Versão:** 5.3.3
-* **Licença:** MIT
-* **Uso:** Grid responsivo, Navbar, Cards de jogos, Buttons, Forms, Input Groups, Badges de status, Modais de cadastro e classes utilitárias.
+- **Tecnologia:** Bootstrap
+- **Versão Exata:** 5.3.3
+- **Licença:** MIT
+- **Uso no Projeto:** Grid responsivo, Navbar, Cards de jogos, Buttons, Forms, Input Groups, Badges de status, Modais de cadastro e classes utilitárias.
+- **Customização:** A estilização padrão do Bootstrap é sobrescrita através de módulos SCSS (`_variables.scss` e `_components.scss`) para implementar a paleta de cores *Dark Mode* e a identidade visual gamer definida nos protótipos do projeto.
 
-A estilização padrão do Bootstrap será customizada com SCSS para reproduzir o Design System Dark Mode / Gamer definido nos protótipos do projeto.
+### API Pública Externa
 
-### API Pública
+- **Serviço:** RAWG Video Games Database API
+- **Versionamento:** v1
+- **Formato utilizado:** JSON
+- **Endpoint Principal:** `https://api.rawg.io/api/games?key={api_key}&search={nome_do_jogo}`
+- **Método HTTP:** GET
 
-* **Serviço:** RAWG Video Games Database API
-* **Versionamento:** v1
-* **Formato utilizado:** JSON
-* **Endpoint:** `https://api.rawg.io/api/games?key={api_key}&search={nome_do_jogo}`
-* **Método:** GET
+Campos Consumidos na Aplicação:
 
-Campos utilizados:
+- `id`: Mapeado como `rawgId` para identificação única do título na base externa.
+- `name`: Título oficial do jogo.
+- `background_image`: URL da capa de alta resolução utilizada na renderização dos cards.
+- `released`: Ano de lançamento extraído para o cadastro.
+- `genres`: Mapeamento do gênero principal.
 
-* `id` (mapeado como `rawgId`)
-* `name`
-* `background_image` (usado para autocompletar a `capaUrl`)
-* `released` (extração do ano de lançamento)
-* `genres` (mapeamento do gênero principal)
-
-A consulta será realizada durante o preenchimento do formulário para autocompletar os dados técnicos do jogo digitado.
-
-#### Erros previstos
-
-* Chave de API inválida ou ausente (`401 Unauthorized`): o sistema deve cair para o modo manual de preenchimento.
-* Termo de busca sem resultados (`results: []`): a aplicação deve alertar que o jogo não foi encontrado na base externa e permitir o preenchimento manual.
-* Falha de conexão/Network Error: o sistema deverá exibir uma mensagem informativa ao usuário sem travar a interface.
-
-```
-
-```
+#### Tratamento de Exceções e Erros da API:
+- **Chave de API inválida/ausente (`401 Unauthorized`):** O sistema deve alternar automaticamente para o modo de preenchimento 100% manual.
+- **Busca sem resultados (`results: []`):** Exibição de aviso informando que o jogo não foi encontrado na base externa, liberando os campos do formulário para digitação livre.
+- **Erro de Conexão/Rede:** Exibição de notificação discreta (Toast) informando a indisponibilidade momentânea do serviço sem travar o fluxo da aplicação.
