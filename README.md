@@ -4,6 +4,18 @@
 
 um site em que você coloca seus jogos jogados junto com informações extras como tempo de jogo e além disso pode colocar jogos que você pretende jogar   
 
+## 🛠️ Cinto de Utilidades Técnico (Tecnologias Selecionadas)
+
+### 🎨 Framework CSS: Bootstrap 5
+* **Tecnologia:** Bootstrap 5.3.3
+* **Justificativa Visual e Técnica:** O Bootstrap foi escolhido por possuir um ecossistema de componentes prontos (Modais, Cards, Badges de status, Tooltips) extremamente aderentes ao layout de dashboards modernos e interfaces de gerenciamento de coleções. Seu sistema de grid flexível (Flexbox/Grid) e utilitários facilitam a criação de uma interface responsiva *Mobile-First*, permitindo customização rápida via Sass/SCSS para aplicação do Design System em *Dark Mode*.
+* **Justificativa Comercial:** Trata-se do framework CSS mais utilizado e consolidado do mercado, com vasta documentação, alto suporte da comunidade e curva de aprendizado rápida, garantindo agilidade na entrega do projeto.
+
+### 🌐 API Pública Externa: RAWG Video Games Database API
+* **Tecnologia:** RAWG API (v1)
+* **Justificativa Comercial e de Experiência do Usuário:** A integração com a RAWG API eleva a proposta de valor do **Backlog Log**, transformando um formulário estático em uma experiência dinâmica e inteligente. Ao permitir o autocompletar de capas, gêneros e datas de lançamento com dados reais da indústria de jogos, reduzimos o atrito de entrada de dados do usuário (*data entry fatigue*), aumentando a retenção e o engajamento na plataforma.
+
+
 #### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
 
 - [ ] ID 01 - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design tradicionais (Figma, Quant UX ou Sketch) ou IA (Stitch).
