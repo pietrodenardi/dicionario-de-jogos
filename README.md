@@ -1,4 +1,4 @@
-# dicionario-de-jogos
+# PurpleList
 
 ### **Autor:** Pietro Adamy Denardi
 
