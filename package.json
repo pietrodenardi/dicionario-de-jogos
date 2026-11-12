@@ -1,0 +1,24 @@
+{
+  "name": "dicionario-de-jogos",
+  "version": "1.0.0",
+  "description": "um site em que você coloca seus jogos jogados junto com informações extras como tempo de jogo e além disso pode colocar jogos que você pretende jogar",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietrodenardi/dicionario-de-jogos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pietrodenardi/dicionario-de-jogos/issues"
+  },
+  "homepage": "https://github.com/pietrodenardi/dicionario-de-jogos#readme"
+}
